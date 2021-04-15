@@ -1,0 +1,19 @@
+.body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0 10px;
+    display: grid;    
+    grid-template-areas:
+    "h h"
+    "p p";
+}
+h1 {
+    grid-area: h;
+}
+.phone {
+    grid-area: p;
+    display: flex;
+}
+.content {
+    margin: 2vw;
+}

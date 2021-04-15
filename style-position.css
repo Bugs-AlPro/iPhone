@@ -1,0 +1,501 @@
+/* phone front side */
+
+.phone-front-box {
+    margin: 5vw;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 60vw;
+    max-width: 420px;
+    max-height: 840px;
+    background-color: gray;
+    border-top: 7vw solid black;
+    border-right: 1.5vw solid black;
+    border-bottom: 7vw solid black;
+    border-left: 1.5vw solid black;
+    border-radius: 4vw;
+    box-shadow:    
+    0 0 0 0.2vw rgb(209, 1, 1),
+    0 0 0 0.5vw rgb(165, 0, 0);
+    position: relative;
+}
+.phone-front-box::before,
+.phone-front-box::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(20, 20, 20);
+    box-shadow: inset 0 0 0 0.3vw rgb(37, 37, 37);
+}
+/* general button */
+
+.phone-front-box::before {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    bottom: -6vw;
+    left: 40%;
+}
+/* head speaker */
+
+.phone-front-box::after {
+    width: 9vw;
+    max-width: 110px;
+    height: 1vw;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+    top: -4.5vw;
+    left: 35%;
+}
+/* phone back side */
+
+.phone-back-box {
+    margin: 5vw;
+    box-sizing: border-box;
+    width: 30vw;
+    height: 60vw;
+    max-width: 420px;
+    max-height: 840px;
+    background-color: rgb(168, 0, 0);
+    border-radius: 4vw;
+    box-shadow: 
+    inset 0 0 0 0.5vw rgba(155, 0, 0, 0.685),
+    0 0 0 0.2vw rgb(209, 1, 1),
+    0 0 0 0.5vw rgb(165, 0, 0);
+    position: relative;
+}
+/* video cam box */
+
+.cam-back::after,
+.cam-back::before,
+.phone-back-box::after,
+.phone-back-box::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+}
+.cam-back {
+    position: absolute;
+    width: 7.5vw;
+    height: 3.5vw;
+    background-color: rgb(20, 20, 20);
+    border-top-left-radius: 25% 50%;
+    border-bottom-left-radius: 25% 50%;
+    border-top-right-radius: 25% 50%;
+    border-bottom-right-radius: 25% 50%;
+    box-shadow: 
+    0 0 0 0.2vw rgb(199, 1, 1),
+    0 0 0 0.4vw rgb(116, 0, 0);
+    top: 2vw;
+    left: 2vw;
+}
+.cam-back::after {
+    width: 1.3vw;
+    height: 1.3vw;
+    background-color: rgba(0, 2, 110, 0.685);
+    top: 1vw;
+    left: 1vw;
+    box-shadow: 0 0 0 0.5vw rgb(0, 0, 0);
+}
+.cam-back::before {
+    width: 1.3vw;
+    height: 1.3vw;
+    background-color: rgba(0, 2, 110, 0.685);
+    top: 1vw;
+    left: 5vw;
+    box-shadow: 0 0 0 0.3vw rgb(0, 0, 0);
+}
+.phone-back-box::after {
+    width: 0.7vw;
+    height: 0.7vw;
+    background-color: rgb(0, 0, 0);
+    top: 3.3vw;
+    left: 10.5vw;
+}
+.phone-back-box::before {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: rgb(228, 204, 204);
+    top: 3vw;
+    left: 12vw;
+}
+/* label apple */
+
+.label-apple,
+.label-apple::after,
+.label-apple::before {
+    background-color: rgb(255, 246, 161);
+    border-top-left-radius: 100% 90%;
+    border-top-right-radius: 100% 90%;
+    border-bottom-left-radius: 90% 120%;
+    border-bottom-right-radius: 90% 120%; 
+    position: absolute;
+    content: "";
+    width: 4.3vw;
+    height: 5.8vw;
+}
+.label-apple {
+    top: 13vw;
+    left: 40%;
+    transform: rotate(-15deg);
+}
+.label-apple::after {
+   top: 0.6vw;
+   left: 2.1vw;
+   transform: rotate(25deg);
+}
+.label-apple::before {
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 100% 5%;
+    top: -1.4vw;
+    left: 4.2vw;
+    transform: rotate(10deg)
+} 
+.label-apple-help {
+    position: absolute;
+    width: 3.3vw;
+    height: 3.3vw;
+    background-color: rgb(168, 0, 0);
+    border-radius: 50%;
+    left: 5.2vw;
+    top: 2vw;
+    z-index: 1;
+}
+/* section text bottom */
+.text-box, 
+.text-iphone,
+.text-product,
+.text-product::after,
+.text-product::before,
+.text-red,
+.text-prodaction {
+    position: absolute;
+    color: rgb(255, 246, 161);
+    content: "";
+    text-align: center;
+}
+.text-box {
+    bottom: 18vw;
+    left: 15%;
+}
+.text-iphone {
+    font-size: 2vw;
+    font-weight: bold;
+    left: 7vw;
+    top: 0.5vw;
+}
+.text-product {
+    font-size: 0.8vw;
+    font-weight: bold;
+    top: 4vw;
+    left: 8vw;
+}
+.text-product::after,
+.text-product::before {
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    border: 0.2vw solid rgb(255, 246, 161);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    top: -0.8vw;   
+}
+.text-product::after {
+    border-left-color: transparent;
+    left: 2.05vw;
+}
+.text-product::before {
+    border-right-color: transparent;
+    left: -0.4vw;
+}
+.text-red {
+    font-size: 0.5vw;
+    left: 12.6vw;
+    top: 3.5vw;
+}
+.text-prodaction {
+    font-size: 0.7vw;
+    width: 11vw;
+    top: 6.4vw;
+    left: 5.2vw;
+    line-height: 1vw;
+}
+/* section icon bottom */
+.icon-c, 
+.icon-c::before,
+.icon-c::after,
+.icon-e,
+.icon-e::before,
+.icon-e::after,
+.icon-e-help,
+.end-icon,
+.end-icon::after,
+.end-icon::before,
+.end-icon-help,
+.end-icon-help::before {
+    position: absolute;
+    content: "";
+    background-color:rgb(168, 0, 0);
+}
+.icon-c,
+.icon-c::after,
+.icon-e,
+.icon-e::after {
+    width: 1.8vw;
+    height: 1.8vw;
+}
+.icon-c,
+.icon-e {
+    border-radius: 50%;
+    top: 10.2vw;
+    box-shadow: 
+    0 0 0 0.1vw rgb(255, 246, 161),
+    0 0 0 0.5vw rgb(168, 0, 0),
+    0 0 0 0.6vw rgb(255, 246, 161);
+}
+.icon-c {
+    left: 7vw;
+}
+.icon-c::before,
+.icon-e::before {
+    width: 1.8vw;
+    height: 3vw;
+    top: -0.6vw;
+    left: 1vw;
+    border-left: 0.1vw solid rgb(255, 246, 161);
+}
+.icon-c::after,
+.icon-e::after {
+    top: 0vw;
+    left: 1vw;
+}
+.icon-e {
+    left: 9.5vw;
+}
+.icon-e-help {
+    width: 0.75vw;
+    height: 0.5vw;
+    top: 0.6vw;
+    left: -0.1vw;
+    border-bottom: 0.1vw solid rgb(255, 246, 161);
+    border-right: 0.1vw solid rgb(255, 246, 161);
+    border-top: 0.1vw solid rgb(255, 246, 161);
+}
+
+.end-icon {
+    width: 1.5vw;
+    height: 2.9vw;
+    border: 0.1vw solid rgb(255, 246, 161);
+    border-top-left-radius: 0.4vw;
+    border-top-right-radius: 0.4vw;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    top: 9.6vw;
+    left: 12.9vw;
+    background-image: linear-gradient(to bottom, 
+    transparent 0.2vw,
+    rgb(255, 246, 161) 0.2vw,
+    rgb(255, 246, 161) 0.3vw,
+    transparent 0.3vw);
+}
+.end-icon::after {
+    width: 0.4vw;
+    height: 0.4vw;
+    border-radius: 50%;
+    border: 0.1vw solid rgb(255, 246, 161);
+    bottom: -0.25vw;
+    right: -0.2vw;
+}
+.end-icon::before {
+    height: 0.3vw;
+    border-left: 0.1vw solid rgb(255, 246, 161);
+    bottom: -0.2vw;
+    left: 0.1vw;
+}
+.end-icon-help,
+.end-icon-help::before {
+    height: 4.5vw;
+    border-left: 0.1vw solid rgb(255, 246, 161);   
+    transform: rotate(45deg);  
+}
+.end-icon-help {
+    bottom: -0.9vw;
+    left: 0.65vw;
+}
+.end-icon-help::before {
+    bottom: 0.1vw;
+    left: 0vw;
+    transform: rotate(-90deg);  
+}
+/* baza App view*/
+
+.base-type {
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    position: relative;
+    box-shadow: 1px 1px 5px -1px gray; 
+}
+/* base front setup */
+
+.info-chek {
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    width: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1vw 2vw;
+    font-size: 1.1vw;
+}
+.info-gsm::before {
+    position: absolute;
+    content: "";
+    width: 0.2vw;
+    height: 0.8vw;
+    background-color: white;
+    top: 0.35vw;
+    left: 1.6vw;
+    border-radius: 0.2vw;
+    box-shadow: 
+    -0.3vw 0 0 0 white,
+    -0.6vw 0 0 0 white,
+    -0.9vw 0 0 0 white;
+}
+.info-gsm::after {
+    position: absolute;
+    content: "";
+    width: 1vw;
+    height: 0.5vw;
+    background-color: gray;
+    top: 0.25vw;
+    left: 0.5vw;
+    transform: rotate(-30deg);
+}
+.info-akb::after {
+    position: absolute;
+    content: "";
+    width: 1.1vw;
+    height: 0.5vw;
+    background-image: linear-gradient(to right,
+    white 70%,
+    transparent 70%);
+    box-shadow: 
+    0 0 0 0.15vw gray,
+    0 0 0 0.2vw white;
+    top: 0.45vw;
+    right: 0.45vw;
+    border-radius: 0.1vw;
+}
+.info-akb::before {
+    position: absolute;
+    content: "";
+    height: 0.3vw;
+    width: 0.1vw;
+    background-color: white;
+    right: 0.13vw;
+    top: 0.55vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/* FaceTime */
+
+.FaceTime {
+  margin: 30px;
+    background-image: linear-gradient(to bottom, rgb(73, 247, 87), rgb(16, 196, 55));
+}
+.FaceTime::before {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 46px;
+    background-color: white;
+    border-radius: 20%;
+    top: 25px;
+    left: 15px;   
+}
+.FaceTime::after {
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    width: 0;
+    height: 13px;    
+    border-right: 18px solid white;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent; 
+    border-radius: 20%;
+    top: 27px;
+    left: 70px;   
+}
+.text-FaceTime  {
+    position: absolute;
+    bottom: -40%;
+    left: 13%;
+}
+/* Notes */
+.Notes {
+  margin: 30px;
+    background-color: rgb(253, 253, 253);
+    background-image: linear-gradient(to bottom, 
+    rgb(251, 255, 0) 24%,
+    rgb(177, 177, 177) 24%,
+    rgb(177, 177, 177) 25%,
+    transparent 25%,
+    transparent 49%,
+    rgb(177, 177, 177) 49%,
+    rgb(177, 177, 177) 50%,
+    transparent 50%,
+    transparent 74%,
+    rgb(177, 177, 177) 74%,
+    rgb(177, 177, 177) 75%,
+    transparent 75%);
+
+}
+.Notes::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 27%;
+    border-bottom:  rgb(177, 177, 177);
+    border-bottom-style: dotted;
+}
+.text-Notes  {
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
+}
+/* Messages */
+
+.Messages {
+    background-image: linear-gradient(to bottom, rgb(73, 247, 87), rgb(16, 196, 55));
+    display: none;    
+}
+.Messages::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top: 18px;
+    left: 15px;
+    border-radius: 50%;
+}
+.Messages::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    border-bottom: 13px solid white;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: 57px;
+    left: 20px;
+    transform: rotate(-15deg);
+}
+.text-Messages  {
+    position: absolute;
+    bottom: -40%;
+    left: 15%;
+}
