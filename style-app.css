@@ -1,0 +1,175 @@
+.body {
+    font-family: sans-serif;
+      /* color: white; */
+  }
+/* header sistem information */
+
+.info-chek {
+
+  position: relative;
+  box-sizing: border-box;
+  width: initial;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1vw 2vw;
+  font-size: 1.1vw;
+}
+.info-gsm::before {
+  position: absolute;
+  content: "";
+  width: 0.2vw;
+  height: 0.8vw;
+  background-color: white;
+  top: 0.35vw;
+  left: 1.6vw;
+  border-radius: 0.2vw;
+  box-shadow: 
+  -0.3vw 0 0 0 white,
+  -0.6vw 0 0 0 white,
+  -0.9vw 0 0 0 white;
+}
+.info-gsm::after {
+  position: absolute;
+  content: "";
+  width: 1vw;
+  height: 0.5vw;
+  background-color: gray;
+  top: 0.25vw;
+  left: 0.5vw;
+  transform: rotate(-30deg);
+}
+.info-akb::after {
+  position: absolute;
+  content: "";
+  width: 1.1vw;
+  height: 0.5vw;
+  background-image: linear-gradient(to right,
+  white 70%,
+  transparent 70%);
+  box-shadow: 
+  0 0 0 0.15vw gray,
+  0 0 0 0.2vw white;
+  top: 0.45vw;
+  right: 0.45vw;
+  border-radius: 0.1vw;
+}
+.info-akb::before {
+  position: absolute;
+  content: "";
+  height: 0.3vw;
+  width: 0.1vw;
+  background-color: white;
+  right: 0.13vw;
+  top: 0.55vw;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* content app */
+
+.content {
+  padding: 1vw;
+ display: flex;
+ justify-content: space-around;
+}
+
+/* base App view */
+
+.base-type {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 25%;
+  position: relative;
+  box-shadow: 1px 1px 5px -1px gray; 
+}
+.icon {
+  position: relative;
+}
+.text  {
+  text-align: center;
+  font-size: 0.9vw;
+  margin: 0.7vw 0 0 0;
+}
+/* FaceTime */
+
+.FaceTime {
+  background-image: linear-gradient(to bottom, rgb(73, 247, 87), rgb(16, 196, 55));
+}
+.FaceTime::before {
+    position: absolute;
+    content: "";
+    width: 2vw;
+    height: 1.8vw;
+    background-color: white;
+    border-radius: 20%;
+    top: 27%;
+    left: 15%;   
+}
+.FaceTime::after {
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    width: 0;
+    height: 0.6vw;    
+    border-right: 0.7vw solid white;
+    border-top: 0.6vw solid transparent;
+    border-bottom: 0.6vw solid transparent; 
+    border-radius: 20%;
+    top: 1.1vw;
+    left: 2.8vw;   
+}
+
+/* Notes */
+.Notes {
+    background-color: rgb(253, 253, 253);
+    background-image: linear-gradient(to bottom, 
+    rgb(251, 255, 0) 24%,
+    rgb(177, 177, 177) 24%,
+    rgb(177, 177, 177) 25%,
+    transparent 25%,
+    transparent 49%,
+    rgb(177, 177, 177) 49%,
+    rgb(177, 177, 177) 50%,
+    transparent 50%,
+    transparent 74%,
+    rgb(177, 177, 177) 74%,
+    rgb(177, 177, 177) 75%,
+    transparent 75%);
+}
+.Notes::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 27%;
+    border-bottom:  rgb(177, 177, 177);
+    border-bottom-style: dotted;
+}
+
+/* Messages */
+
+.Messages {
+    background-image: linear-gradient(to bottom, rgb(73, 247, 87), rgb(16, 196, 55));
+    display: block;    
+}
+.Messages::after {
+    position: absolute;
+    content: "";
+    width: 4.7vw;
+    height: 3.8vw;
+    background-color: white;
+    top: 15%;
+    left: 10%;
+    border-radius: 50%;
+}
+.Messages::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0.4vw;
+    border-bottom: 0.8vw solid white;
+    border-left: 1.5vw solid transparent;
+    border-right: 1.5vw solid transparent;
+    top: 57%;
+    left: 14%;
+    transform: rotate(-15deg);
+}
